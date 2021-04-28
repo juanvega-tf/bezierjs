@@ -42,11 +42,17 @@
     "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
     "@babel/plugin-transform-modules-commonjs": "^7.12.1",
+    "babel-preset-minify": "^0.5.1",
     "chai": "^4.2.0",
     "chai-stats": "^0.3.0",
     "mocha": "^8.1.1",
     "npm-run-all": "^4.1.5",
+    "nyc": "^15.1.0",
     "prettier": "^2.0.5",
     "rollup": "^2.32.1"
-  }
+  },
+  "dependencies": {
+    "jest": "^26.6.3"
+  },
+  "jest": {}
 }
