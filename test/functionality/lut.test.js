@@ -1,7 +1,12 @@
 import {Bezier} from "../../src/bezier.js";
 
 test(`calculate LUT`, () => {
-    const b = new Bezier(100, 25, 10, 90, 110, 100, 150, 195);
+    const b = new Bezier(
+        {x: 100, y: 25},
+        {x: 10, y: 90},
+        {x: 110, y: 100},
+        {x: 150, y: 195}
+    );
     const lut = b.getLUT(230);
 
     console.log(lut);

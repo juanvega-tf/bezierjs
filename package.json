@@ -1,5 +1,5 @@
 {
-  "name": "bezier-js",
+  "name": "@typefom/bezier-js",
   "version": "4.1.0",
   "author": "Pomax",
   "description": "A javascript library for working with Bezier curves",
@@ -27,10 +27,7 @@
     "curves"
   ],
   "scripts": {
-    "test": "npm start",
-    "start": "run-s lint:* mocha build:*",
-    "-----": "------------------------------------------",
-    "build:docs": "npm run rollup -- ./docs/js/bezier.js",
+    "test": "jest --coverage",
     "build:dist": "npm run rollup -- ./dist/bezier.js",
     "build:cjs": "babel --plugins @babel/plugin-transform-modules-commonjs dist/bezier.js --out-file dist/bezier.cjs",
     "rollup": "rollup ./src/bezier.js --format esm --file ",
